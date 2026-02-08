@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Socio-linksaver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📑 My Bookmarks</h1>
+
+    <div class="form">
+      <input type="text" id="title" placeholder="Website Title">
+      <input type="url" id="url" placeholder="Website URL">
+      <input type="text" id="tag" placeholder="Tag (study, social, tools)">
+      <button onclick="addBookmark()">Add Bookmark</button>
+    </div>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search by title or tag..."
+      onkeyup="searchBookmarks()"
+      class="search"
+    >
+
+    <ul id="bookmarkList" class="bookmark-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
